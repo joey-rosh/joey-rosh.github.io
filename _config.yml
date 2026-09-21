@@ -1,0 +1,9 @@
+# Site settings. Edit the title and description to suit.
+title: Law Student Toolkit
+description: Free study tools for law students.
+theme: minima
+
+# Pages shown in the top menu, in this order
+header_pages:
+  - tools.md
+  - about.md

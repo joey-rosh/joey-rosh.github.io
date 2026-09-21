@@ -1,0 +1,4 @@
+# Each entry here appears on the home page and the Tools page.
+- name: Pinpoint
+  url: /pinpoint-aglc4/
+  summary: Generates AGLC4 footnotes, ibid and subsequent references, in-text mentions and bibliography entries for 75 source types.
