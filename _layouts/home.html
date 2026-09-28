@@ -39,7 +39,7 @@ layout: default
       <span class="marker">{{ forloop.index }}</span>
       <h3><a href="{% if g.page %}{{ g.page | relative_url }}{% else %}{{ '/guides/' | relative_url }}{% endif %}">{{ g.name }}</a></h3>
       <p>{{ g.summary }}</p>
-      <p class="card-meta">{{ g.format }} · {{ g.size }}</p>
+      <p class="card-meta">{{ g.format }}{% if g.size %} · {{ g.size }}{% endif %}</p>
     </article>
     {%- endfor %}
   </div>

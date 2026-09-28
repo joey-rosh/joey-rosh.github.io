@@ -1,21 +1,34 @@
-# Downloadable guides and worksheets. Each entry becomes a card on the Guides page.
-# file: the name of the file inside /files/
-- name: Oral Advocacy Guide
+# Guides shown on the home page and the Guides page.
+# page: the web version (optional).  file: the download inside /files/ (optional).
+- name: Arbitration Moot Advocacy Guide
+  page: /guides/arbitration-moot/
   file: oral-advocacy-guide.docx
-  page: /guides/oral-advocacy/
   format: Word document
   size: 32 KB
   updated: September 2026
   summary: >-
-    Practical guidance for preparing and delivering an oral argument in a moot: working out the
-    finding you want, building a structure the bench can follow, answering questions, and
-    managing your time.
+    Preparing and delivering an oral argument in an arbitration moot, where you address a Tribunal
+    rather than a court. Written for the contract law moot workshop.
   contents:
     - Starting from the order you are asking for, and building a theory of the case
     - The 75-word test for a core submission
     - Structure of an address: appearance, roadmap, submissions, conclusion
-    - Handling questions from the bench, and returning to your argument
-    - Timing, handovers and a pre-hearing checklist
+    - Forms of address for an arbitral Tribunal
+    - Handling questions, timing, handovers and a pre-hearing checklist
+
+- name: Court Moot Advocacy Guide
+  page: /guides/court-moot/
+  format: Web page
+  updated: September 2026
+  summary: >-
+    The same approach, adapted for a moot heard by a judge in court: the courtesies, the forms of
+    address and the more formal register that courtroom advocacy uses.
+  contents:
+    - Everything in the arbitration guide, in its court form
+    - Announcing your appearance, and addressing one judge or a bench
+    - Bowing, rising and conduct at the bar table
+    - Staying inside the pleadings or the grounds of appeal
+    - Taking the bench to the appeal book and to authority
 
 - name: Moot Preparation Worksheets
   file: moot-preparation-worksheets.docx

@@ -21,9 +21,9 @@ lede: >-
     </ul>
     <p class="links">
       {%- if g.page %}<a href="{{ g.page | relative_url }}">Read it online →</a>{% endif %}
-      <a href="{{ '/files/' | append: g.file | relative_url }}">Download the Word version →</a>
+      {%- if g.file %}<a href="{{ '/files/' | append: g.file | relative_url }}">Download the Word version →</a>{% endif %}
     </p>
-    <p class="card-meta">{{ g.format }} · {{ g.size }} · updated {{ g.updated }}</p>
+    <p class="card-meta">{{ g.format }}{% if g.size %} · {{ g.size }}{% endif %} · updated {{ g.updated }}</p>
   </article>
 {%- endfor %}
 </div>
