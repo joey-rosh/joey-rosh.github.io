@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="guide wrap">
+  <aside class="toc" id="toc" aria-label="Contents">
+    <details open>
+      <summary>Contents</summary>
+      <h2>Contents</h2>
+      <ol id="toc-list"></ol>
+    </details>
+  </aside>
+  <article>
+    <header class="page-head">
+      <p class="eyebrow">{{ page.eyebrow | default: 'Guide' }}</p>
+      <h1>{{ page.title }}</h1>
+      {%- if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+      {%- if page.docx %}
+      <p class="filelinks">
+        <a class="btn ghost" href="{{ page.docx | relative_url }}">Download the Word version</a>
+        <a class="btn ghost" href="{{ '/guides/' | relative_url }}">All guides</a>
+      </p>
+      {%- endif %}
+    </header>
+    <div class="prose">
+      {{ content }}
+    </div>
+  </article>
+</div>

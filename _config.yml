@@ -1,9 +1,11 @@
-# Site settings. Edit the title and description to suit.
+# Site settings. Edit the title, tagline and text below to suit.
 title: Law Student Toolkit
-description: Free study tools for law students.
-theme: minima
+tagline: Tools & guides
+description: Free, browser-based tools and practical guides for law students.
+footer_note: >-
+  Study aids built by a law student for other law students. Always check your work against
+  the official guides and your unit's requirements.
 
-# Pages shown in the top menu, in this order
-header_pages:
-  - tools.md
-  - about.md
+# Layouts and styles live in this repository, so no external theme is needed.
+exclude:
+  - README.md

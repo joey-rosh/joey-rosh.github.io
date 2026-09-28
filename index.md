@@ -1,14 +1,8 @@
 ---
 layout: home
 title: Home
+headline: Practical tools for the fiddly parts of a law degree
+lede: >-
+  Citation formatting, mooting preparation and the other jobs that eat your study time.
+  Everything runs in your browser, so nothing you type is sent anywhere.
 ---
-
-Free, browser-based study tools for law students. Nothing you type is sent anywhere,
-so your work stays on your own device.
-
-## Tools
-
-{% for tool in site.data.tools %}
-### [{{ tool.name }}]({{ tool.url }})
-{{ tool.summary }}
-{% endfor %}

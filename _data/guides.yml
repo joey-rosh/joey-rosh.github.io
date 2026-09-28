@@ -1,0 +1,33 @@
+# Downloadable guides and worksheets. Each entry becomes a card on the Guides page.
+# file: the name of the file inside /files/
+- name: Oral Advocacy Guide
+  file: oral-advocacy-guide.docx
+  page: /guides/oral-advocacy/
+  format: Word document
+  size: 32 KB
+  updated: September 2026
+  summary: >-
+    Practical guidance for preparing and delivering an oral argument in a moot: working out the
+    finding you want, building a structure the bench can follow, answering questions, and
+    managing your time.
+  contents:
+    - Starting from the order you are asking for, and building a theory of the case
+    - The 75-word test for a core submission
+    - Structure of an address: appearance, roadmap, submissions, conclusion
+    - Handling questions from the bench, and returning to your argument
+    - Timing, handovers and a pre-hearing checklist
+
+- name: Moot Preparation Worksheets
+  file: moot-preparation-worksheets.docx
+  format: Word document
+  size: 28 KB
+  updated: September 2026
+  summary: >-
+    Fill-in worksheets for a moot group to work through together, turning the guide into a
+    written plan before the hearing.
+  contents:
+    - The finding you want, and your fallback position
+    - Core submission in 75 words, and sorting the helpful and harmful facts
+    - Oral plan with a time budget for each speaker
+    - Anticipated questions and prepared answers
+    - Practice-run debrief

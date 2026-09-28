@@ -1,0 +1,11 @@
+# Top menu and footer links, in order.
+# match: any page whose address contains this also highlights the item.
+- name: Tools
+  url: /tools/
+  match: /tools
+- name: Guides
+  url: /guides/
+  match: /guides
+- name: About
+  url: /about/
+  match: /about

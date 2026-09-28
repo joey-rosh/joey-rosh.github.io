@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<section class="hero wrap">
+  <p class="eyebrow">{{ site.tagline }}</p>
+  <h1>{{ page.headline }}</h1>
+  <p class="lede">{{ page.lede }}</p>
+  <div class="hero-actions">
+    <a class="btn" href="{{ '/tools/' | relative_url }}">Browse the tools</a>
+    <a class="btn ghost" href="{{ '/guides/' | relative_url }}">Read the guides</a>
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="section-head">
+    <h2>Tools</h2>
+    <a href="{{ '/tools/' | relative_url }}">All tools →</a>
+  </div>
+  <div class="cards">
+    {%- for tool in site.data.tools %}
+    <article class="card">
+      <span class="marker">{{ forloop.index }}</span>
+      <h3><a href="{{ tool.url | relative_url }}">{{ tool.name }}</a></h3>
+      <p>{{ tool.summary }}</p>
+      <p class="card-meta">Runs in your browser</p>
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="section-head">
+    <h2>Guides</h2>
+    <a href="{{ '/guides/' | relative_url }}">All guides →</a>
+  </div>
+  <div class="cards">
+    {%- for g in site.data.guides %}
+    <article class="card">
+      <span class="marker">{{ forloop.index }}</span>
+      <h3><a href="{% if g.page %}{{ g.page | relative_url }}{% else %}{{ '/guides/' | relative_url }}{% endif %}">{{ g.name }}</a></h3>
+      <p>{{ g.summary }}</p>
+      <p class="card-meta">{{ g.format }} · {{ g.size }}</p>
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+
+{%- if content != '' %}
+<section class="section wrap">
+  <div class="prose">{{ content }}</div>
+</section>
+{%- endif %}
